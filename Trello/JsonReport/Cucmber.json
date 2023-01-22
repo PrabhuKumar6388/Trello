@@ -1,0 +1,150 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Create List and drag the card in Trello Application",
+        "description": "",
+        "id": "create-list-and-drag-the-card-in-trello-application;create-list-and-drag-the-card-in-trello-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6970757001,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User Launch The Application",
+            "match": {
+              "location": "Step_Definitions.user_Launch_The_Application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 19060128900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a user login into application",
+            "match": {
+              "location": "Step_Definitions.userEnterUsername()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 27409096100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user create a new Board",
+            "match": {
+              "location": "Step_Definitions.userCreateANewBoard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6667902499,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user create a \"list A\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "list A",
+                  "offset": 15
+                }
+              ],
+              "location": "Step_Definitions.userCreateList(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6473404300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user create a \"list B\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "list B",
+                  "offset": 15
+                }
+              ],
+              "location": "Step_Definitions.userCreateList(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11033572900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user add a card in \"list A\" parameter as \"Test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "list A",
+                  "offset": 20
+                },
+                {
+                  "val": "Test",
+                  "offset": 42
+                }
+              ],
+              "location": "Step_Definitions.userAddCardInList(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8580747200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user drag and drop the \"list A\" card to \"list B\" card",
+            "match": {
+              "arguments": [
+                {
+                  "val": "list A",
+                  "offset": 24
+                },
+                {
+                  "val": "list B",
+                  "offset": 41
+                }
+              ],
+              "location": "Step_Definitions.userDragAndDropCard(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22349755100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user logout the application",
+            "match": {
+              "location": "Step_Definitions.userLogoutTheApplication()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Create List and drag the card in Trello Application",
+    "description": "",
+    "id": "create-list-and-drag-the-card-in-trello-application",
+    "keyword": "Feature",
+    "uri": "Trello.feature"
+  }
+]
